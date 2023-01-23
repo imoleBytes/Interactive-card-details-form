@@ -16,8 +16,9 @@ body{
     justify-content:space-between;
     width: 100vw;
     height: 100vh;
+
     /* background-color: aquamarine; */
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .side{
@@ -33,6 +34,7 @@ body{
 .form-input{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 label{
     text-transform: uppercase;
@@ -64,17 +66,18 @@ input{
 }
 
 .section-date input{
-    width: 70px;
+    width: 40%;
     display: inline-block;
 }
 .section-cvc input{
     display: block;
+    width: 100%;
 }
 
 
 
 button{
-    margin-top: 30px;
+    margin-top: 20px;
     width: 100%;
     background-color: hsl(278, 68%, 11%);
     color: hsl(270, 3%, 87%);
@@ -87,8 +90,9 @@ button{
 
 .card-back{
     /* background-color: bisque; */
-    width: 300px;
+    width: 80%;
     height: 180px;
+    min-width: 250px;
     position: absolute;
     top: 30px;
     right: 15px;
@@ -96,15 +100,67 @@ button{
 
 .card-front{
     /* background-color: aqua; */
-    width: 300px;
+    max-width: 80%;
+    min-width: 250px;
     height: 180px;
     position: absolute;
     top: 130px;
     left: 15px;
-    /* z-index: 1; */
+    z-index: 1;
+    box-shadow: 1px 20px 70px hsl(279, 6%, 55%);
 }
 img{
 
     width: 100%;
     height: 100%;
+}
+.cvc-number{
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    color: hsl(0, 0%, 100%);
+}
+.card-content{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-style:normal;
+}
+
+.number{
+    width: 100%;
+    /* background-color: aqua; */
+    margin-bottom: 20px;
+    font-size: 18px;
+
+}
+.details{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.filled-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+.empty-circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    /* background-color: rgb(163, 8, 8); */
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    border: 1px solid hsl(0, 0%, 100%);
+    
 }
