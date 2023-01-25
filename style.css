@@ -13,7 +13,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     width: 100vw;
     /* background-color: aqua; */
 
@@ -41,10 +41,16 @@ body{
 }
 
 .form{    
-    width: 100vw;
+    width: 80vw;
     /* background-color: bisque; */
-    padding: 30px;    
+    margin: auto;
+    margin-top: 100px;
+    /* padding: 30px;     */
 }
+
+/* form{
+    width: 80%;
+} */
 .form-input{
     display: flex;
     flex-direction: column;
@@ -63,7 +69,7 @@ body{
         background-size:cover;
         /* background-color: brown; */
     }
-    .form{        
+    .form{
         display: flex;       
         align-items: center;
         justify-content: center;
@@ -71,16 +77,12 @@ body{
     form{
         /* display: none; */
         
-        width: 40%;
+        /* width: 40%; */
         /* width: 50%; */
 
        
-        /* margin-left: 25%;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding: 0; */
-        /* background-color: red; */
+        margin: auto;
+       
     }
 }
 label{
@@ -240,9 +242,21 @@ img{
 
 .complete{
     display: none;
-    width: 40%;
+    /* width: 40%; */
+    margin: auto;
+    margin-top: 80px;
     text-align: center;
+}
 
+#thanks{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.complete p{
+    font-size: 18px;
+    color: hsl(270, 5%, 49%);
+    /* font-weight: 700; */
 }
 
 .svgDiv{
