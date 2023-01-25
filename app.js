@@ -12,6 +12,15 @@ const cardYear = document.querySelector('#year');
 
 
 
+nameInput.addEventListener('input', (e)=>{
+    cardName.innerText = e.target.value;
+    if (cardName.innerText ==""){
+        cardName.innerText = "Jane Appleseed"
+    }
+});
+
+
+
 
 
 
