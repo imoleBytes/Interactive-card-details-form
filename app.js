@@ -19,6 +19,33 @@ nameInput.addEventListener('input', (e)=>{
     }
 });
 
+numberInput.addEventListener('input', (e)=>{
+    cardNumber.innerText = e.target.value;
+    if (cardNumber.innerText ==""){
+        cardNumber.innerText = "0000 0000 0000 0000"
+    }
+});
+
+cvcInput.addEventListener('input', (e)=>{
+    cardCVC.innerText = e.target.value;
+    if (cardCVC.innerText ==""){
+        cardCVC.innerText = "000"
+    }
+});
+
+monthInput.addEventListener('input', (e)=>{
+    cardmonth.innerText = e.target.value;
+    if (cardmonth.innerText ==""){
+        cardmonth.innerText = "00"
+    }
+});
+
+yearInput.addEventListener('input', (e)=>{
+    cardYear.innerText = e.target.value;
+    if (cardYear.innerText ==""){
+        cardYear.innerText = "00"
+    }
+});
 
 
 
