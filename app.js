@@ -11,7 +11,10 @@ const cardmonth = document.querySelector('#month');
 const cardYear = document.querySelector('#year');
 
 const submit = document.querySelector("#submit");
-const continueBtn = document.querySelector("#continue");
+const continueBtn = document.querySelector("#continueBtn");
+
+const form = document.querySelector('#theForm');
+const complete = document.querySelector('.complete');
 
 
 
@@ -49,6 +52,22 @@ yearInput.addEventListener('input', (e)=>{
         cardYear.innerText = "00"
     }
 });
+
+
+submit.addEventListener('click', (e)=>{
+    e.preventDefault();
+    form.style.display = "none";
+    complete.style.display = "block"
+    // console.log(complete.style.display);
+})
+
+continueBtn.addEventListener('click', (e)=>{
+e.preventDefault();
+complete.style.display = "none";
+form.style.display = "block";
+// console.log(complete.style.display);
+})
+
 
 
 
