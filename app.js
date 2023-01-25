@@ -10,6 +10,9 @@ const cardCVC = document.querySelector('.cvc-number');
 const cardmonth = document.querySelector('#month');
 const cardYear = document.querySelector('#year');
 
+const submit = document.querySelector("#submit");
+const continueBtn = document.querySelector("#continue");
+
 
 
 nameInput.addEventListener('input', (e)=>{
