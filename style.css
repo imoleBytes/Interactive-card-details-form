@@ -122,7 +122,9 @@ input{
     display: block;
     width: 100%;
 }
-
+.section-date input:invalid, .section-cvc input:invalid{
+    border: 2px red solid;
+}
 
 
 button{
